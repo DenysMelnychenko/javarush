@@ -115,11 +115,10 @@ public class Solution
         {
             char c = chars[i];
             if ((i != 0 && c == '-') //есть '-' внутри строки
-<<<<<<< HEAD
-                    || (!Character.isDigit(c) && c != '-') ) // не цифра и не начинается с '-'
-=======
+
+
                     || (!Character.isDigit(c) && c != '-')) // не цифра и не начинается с '-'
->>>>>>> javarush/master
+
             {
                 return false;
             }
