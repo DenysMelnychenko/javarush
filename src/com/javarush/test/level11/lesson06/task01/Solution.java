@@ -13,15 +13,27 @@ public class Solution
 
     public class Horse
     {
+<<<<<<< HEAD
         public Horse(){
 
         }
+=======
+    public  Horse(){
+
+    }
+>>>>>>> javarush/master
     }
 
     public class Pegas extends Horse
     {
+<<<<<<< HEAD
         public Pegas(){
 
         }
+=======
+    public Pegas() {
+
+    }
+>>>>>>> javarush/master
     }
 }
