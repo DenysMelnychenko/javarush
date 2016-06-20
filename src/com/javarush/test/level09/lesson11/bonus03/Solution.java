@@ -50,9 +50,7 @@ public class Solution
 
     public static void sort(String[] array)
     {
-<<<<<<< HEAD
-        //напишите тут ваш код
-=======
+
         String temp;
 
         for (int i = 0; i < array.length; i++)
@@ -97,7 +95,7 @@ public class Solution
                     }
                 }
         }
->>>>>>> javarush/master
+
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
