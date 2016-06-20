@@ -50,6 +50,7 @@ public class Solution
 
     public static void sort(String[] array)
     {
+
         String temp;
 
         for (int i = 0; i < array.length; i++)
@@ -94,6 +95,7 @@ public class Solution
                     }
                 }
         }
+
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
@@ -113,7 +115,10 @@ public class Solution
         {
             char c = chars[i];
             if ((i != 0 && c == '-') //есть '-' внутри строки
+
+
                     || (!Character.isDigit(c) && c != '-')) // не цифра и не начинается с '-'
+
             {
                 return false;
             }

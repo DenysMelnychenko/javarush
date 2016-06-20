@@ -19,11 +19,19 @@ public class Solution
     public static void main(String[] args)
     {
         String s = "Я не хочу изучать Java, я хочу большую зарплату";
+<<<<<<< HEAD
+        for (int i = 0; i < 40 ; i++)
+        {
+            System.out.println(s.substring(i));
+        }
+
+=======
 
         for (int i = 0; i < 40; i++)
         {
             System.out.println(s.substring(i));
         }
+>>>>>>> javarush/master
     }
 
 }
