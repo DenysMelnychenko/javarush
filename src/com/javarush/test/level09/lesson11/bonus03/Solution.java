@@ -51,39 +51,48 @@ public class Solution
     public static void sort(String[] array)
     {
         String temp;
-        for (int i = 1; i <array.length ; i++)
-        {
-            for (int j = i + 1; j < array.length; j++)
-            {
-            if (isNumber(array[i]))
-            {
-                {
 
-                    temp = array[i];
-
-                    array[i] = array[j];
-
-                    array[j] = temp;
-
-                }
-            }
-        }
-
-
-            }
         for (int i = 0; i < array.length; i++)
         {
-            for (int j = i + 1; j < array.length; j++)
+            if (isNumber(array[i]))
             {
 
-                if (isGreaterThan(array[i], array[j])) {
-                temp = array[i];
+                for (int j = i + 1; j < array.length; j++)
+                {
+                    if (isNumber(array[j]))
+                    {
+                        int ii = Integer.parseInt(array[i]);
+                        int jj = Integer.parseInt(array[j]);
 
-                array[i] = array[j];
+                        if (ii < jj)
+                        {
 
-                array[j] = temp;
-            }
-            }
+                            temp = array[i];
+
+                            array[i] = array[j];
+
+                            array[j] = temp;
+                        }
+
+
+                    }
+                }
+            } else
+                for (int j = i + 1; j < array.length; j++)
+                {
+                    if (!isNumber(array[j]))
+                    {
+                        if (isGreaterThan(array[i], array[j]))
+                        {
+
+                            temp = array[i];
+
+                            array[i] = array[j];
+
+                            array[j] = temp;
+                        }
+                    }
+                }
         }
     }
 
