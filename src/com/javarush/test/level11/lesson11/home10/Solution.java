@@ -10,33 +10,45 @@ public class Solution
     {
     }
 
-    public class House
+    public class House extends Assets
     {
+        House() {
 
+        }
     }
 
-    public class Cat
+    public class Cat extends Animal
     {
+        Cat() {
 
+        }
     }
 
-    public class Car
+    public class Car extends Assets
     {
+        Car() {
 
+        }
     }
 
-    public class Dog
+    public class Dog extends Animal
     {
+        Dog() {
 
+        }
     }
 
     public class Animal
     {
+        Animal() {
 
+        }
     }
 
     public class Assets
     {
+    Assets() {
 
+    }
     }
 }

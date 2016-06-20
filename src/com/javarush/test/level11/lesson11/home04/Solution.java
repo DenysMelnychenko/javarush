@@ -13,17 +13,23 @@ public class Solution
 
     public class Judaism
     {
+        Judaism() {
 
+        }
     }
 
-    public class Christianity
+    public class Christianity extends Judaism
     {
+        Christianity() {
 
+        }
     }
 
-    public class Islam
+    public class Islam extends Christianity
     {
+        Islam() {
 
+        }
     }
 
 }
